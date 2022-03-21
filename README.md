@@ -18,12 +18,13 @@ docker-compose build
 ```bash
 npm run dev:up
 ```
-This will mount your directory and run `next dev` in the container for 
+This will mount your application directory and run `next dev` in the container for a containerised development environment.
 
 ### Production
 ```bash
 npm run prod:up
 ```
+This run `next build && next start` in the container for a containerised production environment.
 
 ## Docker compose
 
