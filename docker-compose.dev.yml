@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    # For development mount our application directory but ignore node_modules and .next which are handled within the container
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    environment:
+      NODE_ENV: "development"

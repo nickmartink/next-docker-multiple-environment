@@ -15,7 +15,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header>
-      <nav>
+      <nav className="text-lg flex justify-between max-w-md mx-auto">
         <Link href="/">
           <a>Home</a>
         </Link>{' '}
@@ -30,8 +30,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         | <a href="/api/users">Users API</a>
       </nav>
     </header>
-    {children}
-    <footer>
+    <section className="container mx-auto text-center py-10">
+      {children}
+    </section>
+    <footer className="text-center">
       <hr />
       <span>I'm here to stay (Footer)</span>
     </footer>
